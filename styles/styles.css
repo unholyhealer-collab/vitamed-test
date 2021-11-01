@@ -14,6 +14,9 @@ body {
   display: flex;
   align-items: center;
   font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
 }
 
 #logomain {
@@ -36,15 +39,28 @@ body {
 
 #whatsapp{
     margin-left: 7%;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
 }
 
 #instagram{
     margin-left: 2%;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+#instagram:hover{
+  box-shadow: 0px 0px 15px purple;
+}
+
+#whatsapp:hover{
+  box-shadow: 0px 0px 15px green;
 }
 
 .main {
   width: 100%;
   display: flex;
+  margin-top: 60px;
 }
 
 .main > .texts {
@@ -95,7 +111,6 @@ body {
   margin-left: 25%;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
-  position: relative;
 }
 
 #brain {

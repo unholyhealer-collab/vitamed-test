@@ -4,6 +4,17 @@ const images = document.querySelectorAll('.slide img');
 const prevBtn = document.querySelector('#prevBtn');
 const nextBtn = document.querySelector('#nextBtn');
 
+const whatsapp = document.querySelector('#whatsapp');
+const instagram = document.querySelector('#instagram');
+
+whatsapp.addEventListener('click', ()=>{
+    window.open();
+});
+
+instagram.addEventListener('click', ()=>{
+    window.open('https://www.instagram.com/timur_mironyuk/');
+});
+
 let counter = 1;
 const size = images[0].clientWidth;
 
